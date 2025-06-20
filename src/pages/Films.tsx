@@ -1,4 +1,4 @@
-import "../app.css";
+import "../App.css";
 import { useEffect, useState } from "react";
 import api from "../services/getApi";
 import Spinner from "../components/Spinner";
@@ -36,8 +36,6 @@ const Films = () => {
       <h1 className='text-3xl sm:text-4xl font-extrabold text-center text-indigo-400 drop-shadow-[0_0_12px_rgba(99,102,241,0.8)] mb-10'>
         Star Wars Films
       </h1>
-
-      {/* Desktop Table */}
       <div className='hidden sm:block w-full overflow-x-auto'>
         <table className='w-full min-w-[500px] bg-gray-900/70 backdrop-blur-md border border-indigo-500/30 rounded-xl shadow-lg text-sm sm:text-base'>
           <thead>
@@ -60,8 +58,6 @@ const Films = () => {
           </tbody>
         </table>
       </div>
-
-      {/* Mobile Cards */}
       <div className='sm:hidden flex flex-col gap-6'>
         {films.map((film) => (
           <div

@@ -46,8 +46,6 @@ const Vehicles = () => {
       <h1 className='text-4xl font-extrabold text-center text-indigo-400 drop-shadow-[0_0_15px_rgba(99,102,241,0.8)] mb-10'>
         Vehicles
       </h1>
-
-      {/* Tabla desktop */}
       <div className='hidden sm:block w-full overflow-x-auto rounded-xl shadow-lg border border-indigo-500/30 bg-gray-900/70 backdrop-blur-md'>
         <table className='w-full min-w-[500px] text-left text-gray-100 text-sm sm:text-base rounded-xl'>
           <thead>
@@ -73,8 +71,6 @@ const Vehicles = () => {
           </tbody>
         </table>
       </div>
-
-      {/* Tarjetas mobile */}
       <div className='sm:hidden flex flex-col gap-6 mt-6'>
         {visibleVehicles.map((vehicle) => (
           <div
@@ -95,8 +91,6 @@ const Vehicles = () => {
           </div>
         ))}
       </div>
-
-      {/* Paginación */}
       <div className='flex justify-center mt-10 space-x-6'>
         <button
           onClick={handlePrevPage}
