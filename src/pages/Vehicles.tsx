@@ -1,4 +1,4 @@
-import "../app.css";
+import "../App.css";
 import { useEffect, useState } from "react";
 import api from "../services/getApi";
 import Spinner from "../components/Spinner";
