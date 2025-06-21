@@ -3,8 +3,8 @@ import "../App.css";
 
 const Home = () => {
   return (
-    <main className='min-h-screen bg-gray-950 text-white py-16 px-6 flex justify-center items-start'>
-      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 max-w-6xl w-full'>
+    <main className='min-h-full bg-gray-950 text-white py-16 px-6 flex justify-center items-start'>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl w-full'>
         <Card
           image='./saga.jpg'
           name='Films'
