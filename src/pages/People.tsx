@@ -59,10 +59,10 @@ const People = () => {
         <table className='w-full min-w-[500px] text-left text-gray-100 text-sm sm:text-base rounded-xl'>
           <thead>
             <tr className='bg-gray-800 text-indigo-300 uppercase tracking-wider text-xs sm:text-sm'>
-              <th className='px-6 py-4'>Name</th>
-              <th className='px-6 py-4'>Gender</th>
-              <th className='px-6 py-4'>Birth Year</th>
-              <th className='px-6 py-4'>Homeworld</th>
+              <th className='px-6 py-4 text-center '>Name</th>
+              <th className='px-6 py-4 text-center '>Gender</th>
+              <th className='px-6 py-4 text-center '>Birth Year</th>
+              <th className='px-6 py-4 text-center '>Homeworld</th>
             </tr>
           </thead>
           <tbody>
@@ -71,10 +71,10 @@ const People = () => {
                 key={person.name}
                 className='hover:bg-gray-700/40 transition duration-200 border-t border-gray-700 cursor-pointer'
               >
-                <td className='px-6 py-4 font-medium text-indigo-100'>{person.name}</td>
-                <td className='px-6 py-4 text-indigo-100 capitalize'>{person.gender}</td>
-                <td className='px-6 py-4 text-indigo-100'>{person.birth_year}</td>
-                <td className='px-6 py-4 text-indigo-100'>{person.homeworld}</td>
+                <td className='px-6 py-4 font-medium text-indigo-100 text-center '>{person.name}</td>
+                <td className='px-6 py-4 text-indigo-100 capitalize text-center '>{person.gender}</td>
+                <td className='px-6 py-4 text-indigo-100 text-center '>{person.birth_year}</td>
+                <td className='px-6 py-4 text-indigo-100 text-center '>{person.homeworld}</td>
               </tr>
             ))}
           </tbody>
@@ -100,7 +100,7 @@ const People = () => {
           </div>
         ))}
       </div>
-        <div className='flex justify-center mt-10 space-x-6'>
+      <div className='flex justify-center mt-10 space-x-6'>
         <button
           onClick={handlePrevPage}
           disabled={currentPage === 1}

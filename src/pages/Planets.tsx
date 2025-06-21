@@ -50,10 +50,10 @@ const Planets = () => {
         <table className='w-full min-w-[500px] text-left text-gray-100 text-sm sm:text-base rounded-xl'>
           <thead>
             <tr className='bg-gray-800 text-indigo-300 uppercase tracking-wide text-xs sm:text-sm'>
-              <th className='px-6 py-4'>Name</th>
-              <th className='px-6 py-4'>Climate</th>
-              <th className='px-6 py-4'>Terrain</th>
-              <th className='px-6 py-4'>Population</th>
+              <th className='px-6 py-4 text-center '>Name</th>
+              <th className='px-6 py-4 text-center '>Climate</th>
+              <th className='px-6 py-4 text-center '>Terrain</th>
+              <th className='px-6 py-4 text-center '>Population</th>
             </tr>
           </thead>
           <tbody>
@@ -62,10 +62,10 @@ const Planets = () => {
                 key={planet.name}
                 className='hover:bg-gray-700/40 transition duration-200 border-t border-gray-700 cursor-pointer'
               >
-                <td className='px-6 py-4 font-medium text-indigo-100'>{planet.name}</td>
-                <td className='px-6 py-4 text-indigo-100'>{planet.climate}</td>
-                <td className='px-6 py-4 text-indigo-100'>{planet.terrain}</td>
-                <td className='px-6 py-4 text-indigo-100'>{planet.population}</td>
+                <td className='px-6 py-4 font-medium text-indigo-100 text-center '>{planet.name}</td>
+                <td className='px-6 py-4 text-indigo-100 text-center '>{planet.climate}</td>
+                <td className='px-6 py-4 text-indigo-100 text-center '>{planet.terrain}</td>
+                <td className='px-6 py-4 text-indigo-100 text-center '>{planet.population}</td>
               </tr>
             ))}
           </tbody>

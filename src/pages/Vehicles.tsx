@@ -50,10 +50,10 @@ const Vehicles = () => {
         <table className='w-full min-w-[500px] text-left text-gray-100 text-sm sm:text-base rounded-xl'>
           <thead>
             <tr className='bg-gray-800 text-indigo-300 uppercase tracking-wide text-xs sm:text-sm'>
-              <th className='px-6 py-4'>Name</th>
-              <th className='px-6 py-4'>Model</th>
-              <th className='px-6 py-4'>Manufacturer</th>
-              <th className='px-6 py-4'>Class</th>
+              <th className='px-6 py-4 text-center '>Name</th>
+              <th className='px-6 py-4 text-center '>Model</th>
+              <th className='px-6 py-4 text-center '>Manufacturer</th>
+              <th className='px-6 py-4 text-center '>Class</th>
             </tr>
           </thead>
           <tbody>
@@ -62,10 +62,10 @@ const Vehicles = () => {
                 key={vehicle.name}
                 className='hover:bg-gray-700/40 transition duration-200 border-t border-gray-700 cursor-pointer'
               >
-                <td className='px-6 py-4 font-medium text-indigo-100'>{vehicle.name}</td>
-                <td className='px-6 py-4 text-indigo-100'>{vehicle.model}</td>
-                <td className='px-6 py-4 text-indigo-100'>{vehicle.manufacturer}</td>
-                <td className='px-6 py-4 text-indigo-100'>{vehicle.vehicle_class}</td>
+                <td className='px-6 py-4 font-medium text-indigo-100 text-center '>{vehicle.name}</td>
+                <td className='px-6 py-4 text-indigo-100 text-center '>{vehicle.model}</td>
+                <td className='px-6 py-4 text-indigo-100 text-center '>{vehicle.manufacturer}</td>
+                <td className='px-6 py-4 text-indigo-100 text-center '>{vehicle.vehicle_class}</td>
               </tr>
             ))}
           </tbody>

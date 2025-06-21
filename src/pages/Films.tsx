@@ -40,19 +40,21 @@ const Films = () => {
         <table className='w-full min-w-[500px] bg-gray-900/70 backdrop-blur-md border border-indigo-500/30 rounded-xl shadow-lg text-sm sm:text-base'>
           <thead>
             <tr className='bg-gray-800 text-indigo-300 uppercase tracking-wider text-xs sm:text-sm'>
-              <th className='px-4 sm:px-6 py-3 text-left'>Episode</th>
-              <th className='px-4 sm:px-6 py-3 text-left'>Title</th>
-              <th className='px-4 sm:px-6 py-3 text-left'>Director</th>
-              <th className='px-4 sm:px-6 py-3 text-left'>Release Year</th>
+              <th className='px-4 sm:px-6 py-3 text-center '>Episode</th>
+              <th className='px-4 sm:px-6 py-3 text-center '>Title</th>
+              <th className='px-4 sm:px-6 py-3 text-center '>Director</th>
+              <th className='px-4 sm:px-6 py-3 text-center '>Release Year</th>
             </tr>
           </thead>
           <tbody>
             {films.map((film) => (
               <tr key={film.title} className='hover:bg-gray-700/40 transition duration-200 border-t border-gray-700'>
-                <td className='px-4 sm:px-6 py-3 text-indigo-100 font-medium'>{film.episode_id}</td>
-                <td className='px-4 sm:px-6 py-3 text-indigo-100'>{film.title}</td>
-                <td className='px-4 sm:px-6 py-3 text-indigo-100'>{film.director}</td>
-                <td className='px-4 sm:px-6 py-3 text-indigo-100'>{new Date(film.release_date).getFullYear()}</td>
+                <td className='px-4 sm:px-6 py-3 text-indigo-100 font-medium text-center '>{film.episode_id}</td>
+                <td className='px-4 sm:px-6 py-3 text-indigo-100 text-center '>{film.title}</td>
+                <td className='px-4 sm:px-6 py-3 text-indigo-100 text-center '>{film.director}</td>
+                <td className='px-4 sm:px-6 py-3 text-indigo-100 text-center '>
+                  {new Date(film.release_date).getFullYear()}
+                </td>
               </tr>
             ))}
           </tbody>

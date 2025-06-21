@@ -63,10 +63,10 @@ const Species = () => {
         <table className='w-full min-w-[500px] text-left text-gray-100 text-sm sm:text-base rounded-xl'>
           <thead>
             <tr className='bg-gray-800 text-indigo-300 uppercase tracking-wide text-xs sm:text-sm'>
-              <th className='px-6 py-4'>Name</th>
-              <th className='px-6 py-4'>Classification</th>
-              <th className='px-6 py-4'>Designation</th>
-              <th className='px-6 py-4'>Homeworld</th>
+              <th className='px-6 py-4 text-center'>Name</th>
+              <th className='px-6 py-4 text-center'>Classification</th>
+              <th className='px-6 py-4 text-center'>Designation</th>
+              <th className='px-6 py-4 text-center'>Homeworld</th>
             </tr>
           </thead>
           <tbody>
@@ -75,10 +75,10 @@ const Species = () => {
                 key={specie.name}
                 className='hover:bg-gray-700/40 transition duration-200 border-t border-gray-700 cursor-pointer'
               >
-                <td className='px-6 py-4 font-medium text-indigo-100'>{specie.name}</td>
-                <td className='px-6 py-4 text-indigo-100'>{specie.classification}</td>
-                <td className='px-6 py-4 text-indigo-100'>{specie.designation}</td>
-                <td className='px-6 py-4 text-indigo-100'>{specie.homeworld || "Unknown"}</td>
+                <td className='px-6 py-4 font-medium text-indigo-100 text-center '>{specie.name}</td>
+                <td className='px-6 py-4 text-indigo-100 text-center '>{specie.classification}</td>
+                <td className='px-6 py-4 text-indigo-100 text-center '>{specie.designation}</td>
+                <td className='px-6 py-4 text-indigo-100 text-center '>{specie.homeworld || "Unknown"}</td>
               </tr>
             ))}
           </tbody>
