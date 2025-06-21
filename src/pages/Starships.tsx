@@ -71,8 +71,6 @@ const Starships = () => {
           </tbody>
         </table>
       </div>
-
-      {/* Tarjetas mobile */}
       <div className='sm:hidden flex flex-col gap-6 mt-6'>
         {visibleStarships.map((ship) => (
           <div
